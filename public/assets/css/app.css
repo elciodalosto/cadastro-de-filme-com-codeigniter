@@ -5,3 +5,14 @@ li a{
     margin: 2px;
     
 }
+#filmes{
+    background-color: lightgray;
+    height: 450px;
+    width: 90%;
+}
+.rotulo{
+    width: 75px;
+}
+body{
+    height: 110vh;
+}

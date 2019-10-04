@@ -23,7 +23,8 @@ class App extends BaseConfig
 	*/
 	
 	public $baseURL = 'http://localhost:8080';
-	// public $baseURL = 'http://localhost/CI/estudo_CI4/';
+	// public $baseURL = 'http://localhost:80';
+	// public $baseURL = 'http://localhost/estudo_CI4/public/';
 
 	/*
 	|--------------------------------------------------------------------------

@@ -58,7 +58,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
  * only routes that have been defined here will be available.
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('CrudController');
+$routes->setDefaultController('Pages');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -72,15 +72,31 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'CrudController::index');
-$routes->get('index', 'CrudController::index');
-$routes->get('cadastro', 'CrudController::create');
-$routes->get('list-by-year', 'CrudController::listByYear');
-$routes->get('list-by-director', 'CrudController::listByDirector');
-$routes->get('list-by-name', 'CrudController::listByName');
-$routes->get('list-by-gender', 'CrudController::listByGender');
-$routes->get('list-by-category', 'CrudController::listByCategory');
-$routes->get('list-by-rate', 'CrudController::listByRate');
+
+
+// PAGES CONTROLLER
+$routes->get('/', 'Pages::index');
+$routes->get('index', 'Pages::index');
+$routes->get('about', 'Pages::about');
+$routes->get('form_register', 'Pages::register');
+$routes->get('form_login', 'Pages::login');
+$routes->get('form_create', 'Pages::create');
+
+
+// MOVIES CONTROLLER
+$routes->post('movies/store', 'Movies::store');
+// $routes->get('movies/search', 'Movies::search');
+
+
+// AUTH CONTROLLER
+// $routes->post('user/register', 'Auth::register');
+// $routes->post('user/login', 'Auth::login');
+
+
+
+
+
+
 
 /**
  * --------------------------------------------------------------------

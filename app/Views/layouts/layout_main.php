@@ -13,21 +13,22 @@
 
 </head>
 <body>
+
+    <?= $this->include('partials/menu-navbar') ?>
     
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 text-center text-light bg-dark py-2">
-                <h3>CIMOL INTERNSHIP MOVIES</h3>
+            <div class="col-12 py-4">
+                <?php $this->renderSection('content') ?>
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-12 py-4">
-            <?php $this->renderSection('conteudo') ?>
-        </div>
+    <div class="text-center">
+        <a href="<?php echo site_url('pages/about') ?>">2019 - Elcio Augusto Dalosto <em>&copy;</em></a>
     </div>
-
+    
+   
     <!-- JS -->
     <script src="<?php echo base_url('assets/js/jquery-3.4.1.min.js') ?>"></script>
     <script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>

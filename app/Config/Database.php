@@ -32,10 +32,10 @@ class Database extends \CodeIgniter\Database\Config
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'localhost',
-		'username' => 'codeigniter',
+		'username' => 'root',
 		'password' => '',
 		'database' => 'cadastro_de_filmes',
-		'DBDriver' => 'MySQLi',
+		'DBDriver' => 'mysqli',
 		'DBPrefix' => '',
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
