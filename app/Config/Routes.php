@@ -59,7 +59,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
  */
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Pages');
-$routes->setDefaultMethod('index');
+$routes->setDefaultMethod('showme');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
@@ -75,17 +75,11 @@ $routes->setAutoRoute(true);
 
 
 // PAGES CONTROLLER
-$routes->get('/', 'Pages::index');
-$routes->get('index', 'Pages::index');
-$routes->get('about', 'Pages::about');
-$routes->get('form_register', 'Pages::register');
-$routes->get('form_login', 'Pages::login');
-$routes->get('form_create', 'Pages::create');
-
-
-// MOVIES CONTROLLER
-$routes->post('movies/store', 'Movies::store');
-// $routes->get('movies/search', 'Movies::search');
+$routes->get('/', 'Pages::showme');
+// $routes->get('index', 'Pages::index');
+// $routes->get('about', 'Pages::about');
+// $routes->get('form_register', 'Pages::register');
+// $routes->get('form_login', 'Pages::login');
 
 
 // AUTH CONTROLLER

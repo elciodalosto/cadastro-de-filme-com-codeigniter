@@ -12,7 +12,7 @@
                     <!-- EMAIL -->
                     <div class="input-group input-group-sm mb-1">
                         <div class="input-group-prepend">
-                            <span class="input-group-text rotulo">Email</span>
+                            <span class="input-group-text rotulo">E-mail</span>
                         </div>
                         <input name="email" type="text" class="form-control">
                     </div>
@@ -33,9 +33,7 @@
                 </form>
             </div>
         </div>
-        <div class="text-center">
-            <li><a href="<?php echo site_url('/') ?>" class="btn btn-dark">Voltar</a></li>
-        </div>
+
     </div>
 
 <?php $this->endSection() ?>

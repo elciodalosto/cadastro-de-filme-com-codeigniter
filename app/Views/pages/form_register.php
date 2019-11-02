@@ -10,12 +10,12 @@
                 <form action="user/register" method="post">
 
                     <!-- NOME -->
-                    <div class="input-group input-group-sm mb-1">
+                    <!-- <div class="input-group input-group-sm mb-1">
                         <div class="input-group-prepend">
                             <span class="input-group-text rotulo">Nome</span>
                         </div>
                         <input name="name" type="text" class="form-control">
-                    </div>
+                    </div> -->
 
                     <!-- EMAIL -->
                     <div class="input-group input-group-sm mb-1">
@@ -41,9 +41,7 @@
                 </form>
             </div>
         </div>
-        <div class="text-center">
-            <li><a href="<?php echo site_url('/') ?>" class="btn btn-dark">Voltar</a></li>
-        </div>
+
     </div>
 
 <?php $this->endSection() ?>

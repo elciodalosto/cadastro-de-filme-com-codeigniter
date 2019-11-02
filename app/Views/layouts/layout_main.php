@@ -8,13 +8,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/font-awesome.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/font-awesome.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/app.css') ?>">
 
 </head>
 <body>
 
-    <?= $this->include('partials/menu-navbar') ?>
+    <?= $this->include('templates/menu-navbar') ?>
     
     <div class="container-fluid">
         <div class="row">
@@ -24,9 +24,9 @@
         </div>
     </div>
 
-    <div class="text-center">
+    <!-- <div class="text-center">
         <a href="<?php echo site_url('pages/about') ?>">2019 - Elcio Augusto Dalosto <em>&copy;</em></a>
-    </div>
+    </div> -->
     
    
     <!-- JS -->
